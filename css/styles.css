@@ -1,0 +1,13 @@
+:root{
+    --accentColor:#EDEDED;
+    --whiteColor:#FFFFFF;
+    --textColor:#E3E3E3;
+    --basicColor:#0C1218;
+    --buttonColor:#BB9A61;
+    --footerColor:#A08555;
+    --linkColor:#DAB36F;
+}
+
+ul{
+    list-style: none;
+}
