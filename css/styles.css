@@ -8,6 +8,77 @@
     --linkColor:#DAB36F;
 }
 
+body{
+    color: var(--basicColor);
+    font-family: Inter, sans-serif;
+}
+
 ul{
     list-style: none;
+    
 }
+
+img{
+    display:block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    max-width: 1086px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* HEADER START */
+
+header{
+    background-color: var(--basicColor);
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1388px;
+    color: var(--textColor);
+}
+
+.header-list{
+    display: flex;
+}
+.header-item:not(:last-child){
+    margin-right: 15px;
+}
+
+.header-link{
+    color: inherit;
+}
+
+.header-button{
+    display: flex;
+height: 44px;
+min-width: 108px;
+justify-content: center;
+align-items: center;
+border: solid var(--buttonColor);
+cursor: pointer;
+
+    padding: 17px 18px 15px;
+    border-radius: 6px;
+background: var(--buttonColor);
+}
+
+.header-before::before{
+    display: inline-block;
+    content: '';
+    background-image: url(../image/svg/symbol-defs.svg);
+    width: 60px;
+    height: 44px;
+
+    border-radius: 6px;
+background: #EDEDED;
+}
+/* HEADER END */
