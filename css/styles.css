@@ -24,6 +24,16 @@ img{
     display:block;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
 a{
     text-decoration: none;
 }
@@ -137,11 +147,13 @@ line-height: calc(86 / 72);
 font-size: 30px;
 font-weight: 700;
 line-height: calc(35 / 30);
+margin-bottom: 52px;
 }
 
 .hero-text.text{
 font-size: 18px;
-line-height: calc(34 / 18) 
+line-height: calc(34 / 18);
+margin-bottom: 0;
 }
 
 /* HERO END */
@@ -232,11 +244,41 @@ line-height: calc(36 / 30);
 .challenge{
     background-color: var(--accentColor);
 }
+
 .challenge-box{
+    display: flex;
     padding-top: 115px;
     padding-bottom: 110px;
 }
 
+.challenge-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.challenge-container:nth-child(1){
+    margin-right: 265px;
+}
+
+.challenge-svg{
+    margin-bottom: 52px;
+}
+
+.challenge-title{
+font-size: 20px;
+font-weight: 700;
+line-height: calc(26 / 20); 
+
+    margin-bottom: 27px;
+}
+
+.challenge-text{
+    color: rgba(12, 18, 24, 1);
+    text-align: center;
+    font-weight: 400;
+    line-height: calc(24 / 16); 
+}
 /* CHALLENGE END */
 
 
@@ -245,9 +287,45 @@ line-height: calc(36 / 30);
     color: var(--textColor);
 }
 
-.hero-box{
+.home-box{
+    display: flex;
     padding-top: 115px;
     padding-bottom: 25px;
+}
+
+.home-container{
+margin-right: 380px;
+margin-bottom: 80px;
+}
+
+.home-title{
+font-size: 30px;
+font-weight: 700;
+line-height: calc(36 / 30); 
+
+    margin-bottom: 16px;
+}
+
+.home-text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: calc(24 / 20); 
+}
+
+.home-link{
+
+    color: var(--whiteColor);
+text-align: center;
+font-size: 13px;
+font-weight: 700;
+line-height: calc(14 / 13); 
+text-transform: uppercase;
+
+min-width: 200px;
+height: 44px;
+padding: 15px 27px;
+border-radius: 6px;
+background: #BB9A61;
 }
 /* HOME END */
 
@@ -278,4 +356,54 @@ background-position: top center;
     padding-top: 55px;
 }
 
+.footer-box{
+    display: flex;
+    padding-bottom: 18px;
+}
+
+.footer-list{
+    min-width: 200px;
+    margin-right: 160px;
+}
+
+
+.footer-link{
+    color: var(--whiteColor);
+font-weight: 300;
+line-height: calc(16 / 16); 
+}
+.footer-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-svg{
+    width: 40px;
+    padding: 14px;
+}
+
+.footer-copyright{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 17px;
+
+
+    color: var(--whiteColor);
+text-align: center;
+font-weight: 300;
+line-height: calc(17 / 12); 
+}
 /* FOOTER END */
