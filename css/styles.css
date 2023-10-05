@@ -67,6 +67,10 @@ z-index: 1;
 
 }
 
+.header-logo{
+    padding-top: 27px;
+}
+
 .header-nav{
     margin-right: 230px ;
     margin-left: 230px;
@@ -75,6 +79,10 @@ z-index: 1;
 .header-list{
     display: flex;
     align-items: center;
+}
+
+.header-item{
+    position: relative;
 }
 .header-item:not(:last-child){
     margin-right: 15px;
@@ -88,14 +96,22 @@ z-index: 1;
 }
 .header-link.link{
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-top: 40px;
 }
 
 .header-link.link:hover::after,
-.header-link.link:focus:after{
-border-bottom: 1px;
-border: var(--linkColor);
+.header-link.link:focus::after{
+    content: '';
+    position: absolute;
+display: block;
+top: 100%;
+left: 50%;
+transform: translateX(-50%);
+width: 100%;
+height: 2px;
+background-color: var(--linkColor);
+transition: all 166ms;
 }
 
 .header-button{
@@ -243,29 +259,55 @@ background: var(--buttonColor);
 /* LOOK END */
 
 /* CHOOSE START */
+.choose{
+    padding-top: 77px;
+    padding-bottom: 70px;
+
+}
 
 .choose-box{
     color: var(--textColor);
-    padding-top: 115px;
-    padding-bottom: 110px;
+
 }
 
 .choose-title{
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 font-weight: 700;
 line-height: calc(36 / 30);
+margin-bottom: 25px;
 }
 
 .choose-list{
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
     background: url(../image/border-left-top.svg) 0 0 no-repeat, url(../image/border-raid-top.svg) 100% 0 no-repeat,
     url(../image/border-left-bottom.svg) 0 100% no-repeat, url(../image/border-ride-bottom.svg) 100% 100% no-repeat;
     padding: 40px 25px;
 }
 
-.choose-item{
-    max-width: 400px;
+.a{
+    max-width: 482px;
+    margin-right: 86px;
+    margin-bottom: 40px;
+}
+.s{
+    max-width: 482px;
+ 
+
+  
+}
+
+.choose-subject{
+    font-weight: 700;
+    line-height: calc(24 / 20); 
+    margin-bottom: 25px;
+}
+
+.choose-text{
+    font-weight: 400;
+    line-height: calc(32 / 16); /* 200% */
 }
 /* CHOOSE END */
 
@@ -419,7 +461,24 @@ line-height: calc(36 / 30);
 
 .footer-box{
     display: flex;
-    padding-bottom: 18px;
+    padding-bottom: 51px;
+
+    border: 2px;
+    border-bottom: var(--whiteColor);
+}
+
+.footer-container-box{
+    position: relative;
+}
+.footer-box::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--whiteColor);
+
 }
 
 .footer-list{
