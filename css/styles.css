@@ -47,13 +47,28 @@ a{
 }
 /* HEADER START */
 
+.page-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--basicColor);
+height: 93px;
+}
 
 .header-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1488px;
+    
     color: var(--textColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-nav{
+    margin-right: 230px ;
+    margin-left: 230px;
 }
 
 .header-list{
@@ -119,8 +134,8 @@ background: #EDEDED;
 /* HERO START */
 
 .hero{
-    height: 1150px;
-    width: 100%;
+    min-height: 1120px;
+     min-width: 1680px;
     color: var(--whiteColor);
     background-image:  url(../image/Main.jpg);
     display: flex;
