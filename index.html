@@ -68,8 +68,8 @@
                 </ul>
             </nav>
             <ul class="header-list">
-                <li class="header-item"><button type="button" class="header-button">Log in</button></li>
-                <li class="header-item"><button type="button" class="header-button">Sign up</button></li>
+                <li class="header-item" data-modal-open><button type="button" class="header-button is-hidden">Log in</button></li>
+                <li class="header-item"><button type="button" class="header-button is-hidden">Sign up</button></li>
                 <li><a class="header-shop" href="">
                     <svg id="shopping-cart" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 21 19">
                         <g id="Сгруппировать_65" data-name="Сгруппировать 65">
@@ -100,6 +100,13 @@
                 <p class="hero-text">We'll help you create the best plan</p>
                 <p class="hero-text text">Search nearly 40+ floor plans and find your dream home today</p>
         </section>
+        <!-- modal -->
+        <div class="backdrop" data-modal>
+            <div class="modal">
+
+                <button type="button" data-modal-close>закрити</button>
+            </div>
+        </div>
         <!-- Take a look inside -->
         <section>
             <div class="look-box box">
@@ -244,5 +251,21 @@
     
         document.body.style.paddingTop = `${pageHeaderHeight}px`
     </script>
+    
+   <script>
+         const refs = {
+          openModalBtn: document.querySelector("[data-modal-open]"),
+          closeModalBtn: document.querySelector("[data-modal-close]"),
+          modal: document.querySelector("[data-modal]"),
+        };
+      
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+      
+        function toggleModal() {
+          refs.modal.classList.toggle("is-hidden");
+        }
+   </script>
+    
 </body>
 </html>
