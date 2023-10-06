@@ -215,6 +215,7 @@ margin-bottom: 0;
     background: rgba(52, 54, 66, 0.9);
     opacity: 0;
     pointer-events: none;
+    cursor: pointer;
 }
 
 .is-hidden{
@@ -230,6 +231,7 @@ margin-bottom: 0;
     background-color: var(--basicColor);
     width: 540px;
     height: 640px;
+    cursor: auto;
 
 }
 
