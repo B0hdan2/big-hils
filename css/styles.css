@@ -223,6 +223,10 @@ margin-bottom: 0;
     pointer-events: all;
 }
 
+.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li::not(:last-child){
+    margin-right: 40px
+}
+
 .modal{
     position: absolute;
     top: 50%;
